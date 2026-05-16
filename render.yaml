@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rajibsnote
+    runtime: node
+    plan: free
+    buildCommand: chmod +x build.sh && bash build.sh
+    startCommand: node backend/dist/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: GEMINI_API_KEY
+        sync: false
+    healthCheckPath: /api/health

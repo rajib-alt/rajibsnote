@@ -1,0 +1,13 @@
+{
+  "name": "rajibsnote",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bash build.sh",
+    "start": "node backend/dist/index.js",
+    "dev": "echo 'Run backend and frontend separately'"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
